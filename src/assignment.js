@@ -13,10 +13,21 @@ const assignment = {};
  * @param {Array} arrayOfNumbers the array of numbers to sum
  * @returns number the sum of the numbers
  */
-function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+
+ const array = [4, 6, 8, 10];
+ let sumOfNumbers = 0;
+ 
+ 
+ console.log(sumOfNumbers);
+
+
+function sumOfNumbers(array) {
+    for (let i = 0; i < array.length; i++) {
+        sumOfNumbers += array[i];
+    }
+    return array.length;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
